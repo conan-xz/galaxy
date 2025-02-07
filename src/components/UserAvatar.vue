@@ -38,12 +38,4 @@
     width: 100%;
     height: 100%;
   }
-  
-  .sparkle-effect {
-    /* 添加闪烁效果的 CSS */
-  }
-  
-  .umbrella-effect {
-    /* 添加撑伞效果的 CSS */
-  }
   </style>

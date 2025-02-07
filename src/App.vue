@@ -42,7 +42,7 @@ export default {
     const fetchHoroscope = async (location) => {
       // 模拟API调用
       horoscope.value = {
-        sign: 'Sagittarius',
+        sign: 'Scorpio',
         dailyHoroscope: 'Today is your lucky day!',
         status: 'good'
       }
@@ -61,8 +61,8 @@ export default {
 
       // 模拟获取用户头像信息
       avatarInfo.value = {
-        imageUrl: 'path/to/avatar.png',
-        zodiacSign: 'Sagittarius',
+        imageUrl: 'src/assets/scorpio.jpeg',
+        zodiacSign: 'Scorpio',
         lifeNumber: 7
       }
     })

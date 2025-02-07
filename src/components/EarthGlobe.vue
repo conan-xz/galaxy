@@ -18,12 +18,15 @@
       const initEarth = () => {
         scene = new THREE.Scene()
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
-        renderer = new THREE.WebGLRenderer()
+        renderer = new THREE.WebGLRenderer({ antialias: true })
         renderer.setSize(window.innerWidth * 0.6, window.innerHeight * 0.6)
+        renderer.setPixelRatio(window.devicePixelRatio)
         document.getElementById('earth-container').appendChild(renderer.domElement)
   
         const geometry = new THREE.SphereGeometry(5, 32, 32)
-        const texture = new THREE.TextureLoader().load('path/to/earth-texture.jpg')
+        const texture = new THREE.TextureLoader().load('src/assets/tellurion2.jpeg', () => {
+          renderer.render(scene, camera)
+        })
         const material = new THREE.MeshBasicMaterial({ map: texture })
         earth = new THREE.Mesh(geometry, material)
         scene.add(earth)
