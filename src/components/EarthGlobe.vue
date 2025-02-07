@@ -24,10 +24,10 @@
         document.getElementById('earth-container').appendChild(renderer.domElement)
   
         const geometry = new THREE.SphereGeometry(5, 32, 32)
-        const texture = new THREE.TextureLoader().load('src/assets/tellurion2.jpeg', () => {
+        const texture = new THREE.TextureLoader().load('src/assets/tellurion.jpeg', () => {
           renderer.render(scene, camera)
         })
-        const material = new THREE.MeshBasicMaterial({ map: texture })
+        const material = new THREE.MeshBasicMaterial({ map: texture })  
         earth = new THREE.Mesh(geometry, material)
         scene.add(earth)
   
