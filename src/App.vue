@@ -84,7 +84,7 @@ export default {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-color: #1a1a2e;
+  background-color: #2a2a48;
   color: white;
 }
 </style>
